@@ -27,4 +27,5 @@ public class FictionBook extends Book{
                 ", author='" + author + '\'' +
                 '}';
     }
+
 }
