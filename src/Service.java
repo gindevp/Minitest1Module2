@@ -19,19 +19,20 @@ public class Service {
                 }
 
             }
-        }return count;
+        }
+        return count;
     }
+
     public static int countCategory(Book[] arr, String category) {
         int count = 0;
         for (Book x : arr
         ) {
-            if(x instanceof FictionBook){
-                FictionBook y= (FictionBook) x;
+            if (x instanceof FictionBook) {
+                FictionBook y = (FictionBook) x;
                 if (category.equals(y.getCategory())) {
                     count++;
                 }
             }
-
 
 
         }
@@ -43,8 +44,8 @@ public class Service {
         int count = 0;
         for (Book x : arr
         ) {
-            if(x instanceof FictionBook){
-                FictionBook y=(FictionBook) x;
+            if (x instanceof FictionBook) {
+                FictionBook y = (FictionBook) x;
                 if (y.getPrice() < 100) {
                     count++;
                 }

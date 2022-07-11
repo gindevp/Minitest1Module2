@@ -1,9 +1,8 @@
-public class FictionBook extends Book{
+public class FictionBook extends Book {
     private String category;
 
     public FictionBook() {
     }
-
 
 
     public FictionBook(int bookCode, String name, double price, String author, String category) {
@@ -18,7 +17,6 @@ public class FictionBook extends Book{
     public void setCategory(String category) {
         this.category = category;
     }
-
 
 
 }

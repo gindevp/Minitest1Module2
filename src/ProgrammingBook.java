@@ -1,10 +1,9 @@
-public class ProgrammingBook extends Book{
+public class ProgrammingBook extends Book {
     private String language;
     private String framework;
 
     public ProgrammingBook() {
     }
-
 
 
     public ProgrammingBook(int bookCode, String name, double price, String author, String language, String framework) {

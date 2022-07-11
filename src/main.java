@@ -16,7 +16,7 @@ public class main {
         Book fb5 = new FictionBook(10, "book java", 9.99, "quyet79", "sach lap trinh");
 
         //Truyền các đối tượng vào mảng có kiểu dữ liệu là class
-        Book[] arr = new Book[]{pb1, pb2, pb3, pb4, pb5,fb1, fb2, fb3, fb4, fb5};
+        Book[] arr = new Book[]{pb1, pb2, pb3, pb4, pb5, fb1, fb2, fb3, fb4, fb5};
 
 
         //Thực hiện và in ra giá trị
