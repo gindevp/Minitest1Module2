@@ -1,48 +1,55 @@
 public class Service {
-    public static double sumPrice(ProgrammingBook[] pb, FictionBook[] fb) {
+    public static double sumPrice(Book[] arr) {
         double sum = 0;
-        for (ProgrammingBook x : pb
+        for (Book x : arr
         ) {
-            sum += x.price;
-        }
-        for (FictionBook x : fb
-        ) {
-            sum += x.price;
+            sum += x.getPrice();
         }
         return sum;
     }
 
-    public static int countLanguage(ProgrammingBook[] pb, String language) {
+    public static int countLanguage(Book[] arr, String language) {
         int count = 0;
-        for (ProgrammingBook x : pb
+        for (Book x : arr
         ) {
-            if (language.equals(x.getLanguage())) {
-                count++;
+            if (x instanceof ProgrammingBook) {
+                ProgrammingBook y = (ProgrammingBook) x;
+                if (language.equals(y.getLanguage())) {
+                    count++;
+                }
+
             }
+        }return count;
+    }
+    public static int countCategory(Book[] arr, String category) {
+        int count = 0;
+        for (Book x : arr
+        ) {
+            if(x instanceof FictionBook){
+                FictionBook y= (FictionBook) x;
+                if (category.equals(y.getCategory())) {
+                    count++;
+                }
+            }
+
+
+
         }
         return count;
-    }
-public static int countCategory(FictionBook[] fb, String category) {
-        int count = 0;
-        for (FictionBook x : fb
-        ) {
-            if (category.equals(x.getCategory())) {
-                count++;
-            }
-
-
-        }
-        return count;
 
     }
 
-    public static int countPriceMin100(FictionBook[] fb) {
+    public static int countPriceMin100(Book[] arr) {
         int count = 0;
-        for (FictionBook x : fb
+        for (Book x : arr
         ) {
-            if (x.price < 100) {
-                count++;
+            if(x instanceof FictionBook){
+                FictionBook y=(FictionBook) x;
+                if (y.getPrice() < 100) {
+                    count++;
+                }
             }
+
         }
         return count;
     }
