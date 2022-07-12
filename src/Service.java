@@ -1,5 +1,5 @@
 public class Service {
-    public static double sumPrice(Book[] arr) {
+    public double sumPrice(Book[] arr) {
         double sum = 0;
         for (Book x : arr
         ) {
@@ -8,7 +8,7 @@ public class Service {
         return sum;
     }
 
-    public static int countLanguage(Book[] arr, String language) {
+    public int countLanguage(Book[] arr, String language) {
         int count = 0;
         for (Book x : arr
         ) {
@@ -23,7 +23,7 @@ public class Service {
         return count;
     }
 
-    public static int countCategory(Book[] arr, String category) {
+    public int countCategory(Book[] arr, String category) {
         int count = 0;
         for (Book x : arr
         ) {
@@ -40,7 +40,7 @@ public class Service {
 
     }
 
-    public static int countPriceMin100(Book[] arr) {
+    public int countPriceMin100(Book[] arr) {
         int count = 0;
         for (Book x : arr
         ) {
